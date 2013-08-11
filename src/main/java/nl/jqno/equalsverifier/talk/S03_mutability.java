@@ -58,7 +58,7 @@ public class S03_mutability {
 	 * Let's set up a test.
 	 */
 	private Point p = new Point(1, 2);
-	private Set<Point> set = new HashSet<Point>();
+	private Set<Point> set = new HashSet<>();
 	{
 		set.add(p);
 	}

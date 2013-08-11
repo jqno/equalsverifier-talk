@@ -55,7 +55,7 @@ public class S02_hashcode {
 	 */
 	@Test
 	public void object_can_be_found_in_a_hash_based_collection() {
-		Set<Point> set = new HashSet<Point>();
+		Set<Point> set = new HashSet<>();
 		set.add(p1);
 		
 		assertTrue(set.contains(p2));  //  <-- Fails... PROBABLY.

@@ -78,7 +78,7 @@ public class S01_signature {
 	@Ignore
 //	@Test
 	public void equals_works_correctly_with_collections() {
-		List<Point> list = new ArrayList<Point>();
+		List<Point> list = new ArrayList<>();
 		list.add(p1);
 		
 		assertTrue(list.contains(p2));
