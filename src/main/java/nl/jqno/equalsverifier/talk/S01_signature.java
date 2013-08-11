@@ -13,6 +13,15 @@ import org.junit.Test;
 
 public class S01_signature {
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * What's wrong with this implementation?
 	 */
@@ -86,12 +95,42 @@ public class S01_signature {
 	
 	
 	
+	
+	
+	/*
+	 * Once more, with EqualsVerifier
+	 */
+	@Ignore
+//	@Test
+	public void equalsverifier() {
+		EqualsVerifier.forClass(Point.class)
+				.verify();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Here's a better implementation
 	 */
 	
 	/*
 		public boolean equals(Object obj) {
+			if (!(obj instanceof Point)) {
+				return false;
+			}
 			Point other = (Point)obj;
 			return x == other.x && y == other.y;
 		}
@@ -107,15 +146,23 @@ public class S01_signature {
 	
 	
 	
+	
 	/*
-	 * Once more, with EqualsVerifier
+	 * Note: C# differs here.
+	 * 
+	 * If you implement IEquatable, you need BOTH forms.
 	 */
-	@Ignore
-//	@Test
-	public void equalsverifier() {
-		EqualsVerifier.forClass(Point.class)
-				.verify();
-	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

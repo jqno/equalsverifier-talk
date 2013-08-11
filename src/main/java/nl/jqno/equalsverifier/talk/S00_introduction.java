@@ -7,8 +7,23 @@ public class S00_introduction {
 	 * Not all equals() methods are created equal
 	 * 
 	 * 
-	 * Jan Ouwens
+	 *                    -or-
+	 * 
+	 * How to write a good equals method in Java
+	 * 
+	 * 
+	 * 
+	 * 
+	 *                                Jan Ouwens
+	 * 
 	 */
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -31,6 +46,7 @@ public class S00_introduction {
 	
 	
 	
+	
 	/*
 	 * Java-centric
 	 * 
@@ -38,14 +54,35 @@ public class S00_introduction {
 	 */
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
-	/* Resources:
-	 * - Effective Java, by Joshua Bloch
+	/* 
+	 * Resources:
 	 * 
 	 * - "How to Write an Equality Method in Java" by Odersky, Spoon & Venners
 	 *   http://www.artima.com/lejava/articles/equality.html
 	 * 
-	 * - EqualsVerifier, by... me :)
+	 * - Effective Java, by Joshua Bloch
+	 * 
+	 * - Effective C#, by Bill Wagner
+	 * 
+	 * - EqualsVerifier, by me :)
 	 */
 	
 	
@@ -53,6 +90,7 @@ public class S00_introduction {
 	
 	
 	
+
 	
 	
 	
@@ -79,10 +117,6 @@ public class S00_introduction {
 			return y;
 		}
 	}
-	
-	
-	
-	
 	
 	
 	
