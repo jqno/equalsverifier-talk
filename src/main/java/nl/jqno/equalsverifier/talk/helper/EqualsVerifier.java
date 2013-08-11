@@ -10,6 +10,6 @@ import nl.jqno.equalsverifier.Warning;
  */
 public class EqualsVerifier {
 	public static <T> nl.jqno.equalsverifier.EqualsVerifier<T> forClass(Class<T> type) {
-		return nl.jqno.equalsverifier.EqualsVerifier.forClass(type).suppress(Warning.STRICT_INHERITANCE);
+		return nl.jqno.equalsverifier.EqualsVerifier.forClass(type).suppress(Warning.STRICT_INHERITANCE, Warning.NULL_FIELDS);
 	}
 }

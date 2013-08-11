@@ -1,0 +1,175 @@
+package nl.jqno.equalsverifier.talk;
+
+import static org.junit.Assert.assertTrue;
+import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
+
+import org.junit.Ignore;
+import org.junit.Test;
+
+public class S05_symmetry {
+	/*
+	 * Let's start with an immutable Point.
+	 */
+	public class Point {
+		private final int x;
+		private final int y;
+		
+		public Point(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+
+		@Override
+		public int hashCode() {
+			int result = 1;
+			result = (31 * result) + x;
+			result = (31 * result) + y;
+			return result;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (!(obj instanceof Point)) {
+				return false;
+			}
+			Point other = (Point)obj;
+			return x == other.x && y == other.y;
+		}
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * We'll derive a subclass called ColorPoint
+	 */
+	public enum Color {
+		RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
+	}
+	
+	public class ColorPoint extends Point {
+		private final Color color;
+		
+		public ColorPoint(int x, int y, Color color) {
+			super(x, y);
+			this.color = color;
+		}
+		
+		@Override
+		public int hashCode() {
+			int result = super.hashCode();
+			result = (31 * result) + color.hashCode();
+			return result;
+		}
+		
+		@Override
+		public boolean equals(Object obj) {
+			if (!(obj instanceof ColorPoint)) {
+				return false;
+			}
+			ColorPoint other = (ColorPoint)obj;
+			return color.equals(other.color) && super.equals(obj);
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	/*
+	 * Let's define some test data
+	 */
+	private Point simplePoint = new Point(1, 2);
+	private ColorPoint colorPoint = new ColorPoint(1, 2, Color.INDIGO);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * Are they symmetrical?
+	 */
+	@Test
+	public void simple_point_is_equal_to_color_point() {
+		assertTrue(simplePoint.equals(colorPoint));
+	}
+	
+	@Test
+	public void color_point_is_equal_to_simple_point() {
+		assertTrue(colorPoint.equals(simplePoint));
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	/*
+	 * EqualsVerifier catches this, too.
+	 */
+	@Ignore
+//	@Test
+	public void equalsverifier() {
+		EqualsVerifier.forClass(ColorPoint.class)
+				.verify();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
