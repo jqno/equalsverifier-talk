@@ -150,7 +150,7 @@ public class S01_signature {
 	/*
 	 * Note: C# differs here.
 	 * 
-	 * If you implement IEquatable, you need BOTH forms.
+	 * If you implement IEquatable<T>, you need BOTH forms.
 	 */
 
 	
