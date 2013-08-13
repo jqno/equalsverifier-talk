@@ -11,7 +11,7 @@ public class S08_liskov_substitution_principle {
 	 * 
 	 * - if S is a subtype of T,
 	 * - then objects of type T may be replaced with objects of type S
-	 * - and no-one would notice.
+	 * - and nothing will break.
 	 */
 
 
@@ -41,15 +41,15 @@ public class S08_liskov_substitution_principle {
 
 		@Override
 		public boolean equals(Object obj) {
-			// Use getClass instead of instanceof
 			if (obj == null || getClass() != obj.getClass()) {
 				return false;
 			}
 			Point other = (Point)obj;
 			return x == other.x && y == other.y;
 		}
-	}		
+	}	
 	
+
 	
 	
 	
@@ -98,7 +98,7 @@ public class S08_liskov_substitution_principle {
 	
 	
 	/*
-	 * I recommend using 'instanceof' instead of 'getClass'.
+	 * I recommend using 'instanceof' instead of 'getClass' in all cases.
 	 */
 	
 	

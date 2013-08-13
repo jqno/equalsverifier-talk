@@ -11,7 +11,7 @@ public class S07_an_unsatisfying_solution {
 	
 	/*
 	 * "There is no way to extend an instantiable class and add a value component 
-	 * while preserving the equals contract"
+	 * while preserving the equals contract."
 	 * -- Joshua Bloch, Effective Java
 	 */
 	
@@ -43,7 +43,9 @@ public class S07_an_unsatisfying_solution {
 
 		@Override
 		public boolean equals(Object obj) {
-			// Use getClass instead of instanceof
+			/*
+			 * Use getClass instead of instanceof
+			 */
 			if (obj == null || getClass() != obj.getClass()) {
 				return false;
 			}
@@ -51,8 +53,6 @@ public class S07_an_unsatisfying_solution {
 			return x == other.x && y == other.y;
 		}
 	}
-	
-	
 	
 	
 	

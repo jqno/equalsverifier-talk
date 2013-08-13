@@ -55,7 +55,7 @@ public class S09_canequal {
 			}
 			Point other = (Point)obj;
 			/*
-			 * And then if obj is compatible with us:
+			 * And then check if other is compatible with us:
 			 */
 			return other.canEqual(this) && x == other.x && y == other.y;
 		}
@@ -91,7 +91,7 @@ public class S09_canequal {
 		}
 		
 		/*
-		 * We do the same here:
+		 * Note that now, obj must instanceof ColorPoint!
 		 */
 		@Override
 		public boolean canEqual(Object obj) {
@@ -139,6 +139,31 @@ public class S09_canequal {
 				.withRedefinedSuperclass()
 				.verify();
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * That's because EqualsVerifier wants to:
+	 * 
+	 * - make the common stuff easy, and
+	 * 
+	 * - make the uncommon stuff possible.
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -39,17 +39,16 @@ public class S06_transitivity {
 	            return color.equals(other.color) && super.equals(other);
 	        }
 	        else if (obj instanceof Point) {
-	        	// If it's a Point, but not a ColorPoint,
-	        	// let's just call the Point's equals method!
+	        	/*
+	        	 * If it's a Point, but not a ColorPoint,
+	        	 * let's just call the Point's equals method!
+	        	 */
 	            Point other = (Point)obj;
 	            return other.equals(this);
 	        }
 	        return false;
 		}
 	}	
-	
-	
-	
 	
 	
 	

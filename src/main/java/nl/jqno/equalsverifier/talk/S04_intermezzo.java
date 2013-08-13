@@ -5,8 +5,8 @@ public class S04_intermezzo {
 
 	/*
 	 * Why did EqualsVerifier say that "equals is not final"?
-	 * 
 	 */
+
 	
 	
 	
@@ -39,8 +39,8 @@ public class S04_intermezzo {
 	 * - Consistency       if x == y now, then x == y always
 	 * 
 	 * - Non-nullity       x == null is never true
-	 * 
 	 */
+	
 	
 	
 	
@@ -49,8 +49,8 @@ public class S04_intermezzo {
 	
 	/*
 	 * (Our mutable Point breaks consistency.)
-	 * 
 	 */
+	
 
 	
 	

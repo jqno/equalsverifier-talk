@@ -98,7 +98,7 @@ public class S01_signature {
 	
 	
 	/*
-	 * Once more, with EqualsVerifier
+	 * Once more, with EqualsVerifier.
 	 */
 	@Ignore
 //	@Test
@@ -123,7 +123,7 @@ public class S01_signature {
 	
 	
 	/*
-	 * Here's a better implementation
+	 * Here's a better implementation.
 	 */
 	
 	/*

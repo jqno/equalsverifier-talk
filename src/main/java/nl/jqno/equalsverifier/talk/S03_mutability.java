@@ -86,13 +86,13 @@ public class S03_mutability {
 	public void object_should_still_be_findable_in_a_collection_even_if_it_changed() {
 		assertTrue(set.contains(p));
 		
-		// And now, we change p!
+		/*
+		 * And now, we change p!
+		 */
 		p.setX(1337);
 		
 		assertTrue(set.contains(p));  //  <-- Fails... PROBABLY.
 	}
-	
-	
 	
 	
 	
@@ -135,9 +135,6 @@ public class S03_mutability {
 	 * 
 	 * Solution 2: use immutable data classes.
 	 */
-	
-	
-	
 	
 	
 	

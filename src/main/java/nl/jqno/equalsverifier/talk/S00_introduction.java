@@ -30,11 +30,11 @@ public class S00_introduction {
 	/*
 	 * In this talk:
 	 * 
-	 * - common pitfalls
+	 * - common pitfalls;
 	 * 
-	 * - how to avoid them
+	 * - how to avoid them;
 	 * 
-	 * - how to test them
+	 * - how to test them.
 	 */
 	
 

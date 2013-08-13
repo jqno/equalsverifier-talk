@@ -48,7 +48,7 @@ public class S05_symmetry {
 	
 	
 	/*
-	 * We'll derive a subclass called ColorPoint
+	 * We'll derive a subclass called ColorPoint.
 	 */
 	public class ColorPoint extends Point {
 		private final Color color;
@@ -63,8 +63,10 @@ public class S05_symmetry {
 			return 31 * (31 + super.hashCode()) + color.hashCode();
 		}
 		
-		// Think a moment: what could be wrong with this equals method?
-		// It does call super!
+		/*
+		 * Think a moment: what could be wrong with this equals method?
+		 * It _does_ call super!
+		 */
 		@Override
 		public boolean equals(Object obj) {
 			if (!(obj instanceof ColorPoint)) {
@@ -94,11 +96,9 @@ public class S05_symmetry {
 	
 	
 	
-	
-	
 
 	/*
-	 * OK, let's define some test data
+	 * OK, let's define some test data.
 	 */
 	private Point simplePoint = new Point(1, 2);
 	private ColorPoint colorPoint = new ColorPoint(1, 2, Color.INDIGO);
