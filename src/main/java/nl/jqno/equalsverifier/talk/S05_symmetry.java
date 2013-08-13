@@ -148,6 +148,13 @@ public class S05_symmetry {
 	
 
 	/*
+	 * Why do we care about symmetry?
+	 * 
+	 * The invocation order now defines whether equals will succeed or not. Ouch!
+	 */
+	
+	
+	/*
 	 * EqualsVerifier catches this, too.
 	 */
 	@Ignore
@@ -156,13 +163,6 @@ public class S05_symmetry {
 		EqualsVerifier.forClass(ColorPoint.class)
 				.verify();
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
