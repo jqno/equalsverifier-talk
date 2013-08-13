@@ -1,6 +1,7 @@
 package nl.jqno.equalsverifier.talk;
 
 import static org.junit.Assert.assertTrue;
+import nl.jqno.equalsverifier.talk.S04_intermezzo.Color;
 import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
 
 import org.junit.Ignore;
@@ -21,10 +22,7 @@ public class S05_symmetry {
 
 		@Override
 		public int hashCode() {
-			int result = 1;
-			result = (31 * result) + x;
-			result = (31 * result) + y;
-			return result;
+			return 31 * (31 + x) + y;
 		}
 
 		@Override
@@ -47,13 +45,11 @@ public class S05_symmetry {
 	
 	
 	
+	
+	
 	/*
 	 * We'll derive a subclass called ColorPoint
 	 */
-	public enum Color {
-		RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
-	}
-	
 	public class ColorPoint extends Point {
 		private final Color color;
 		
@@ -64,9 +60,7 @@ public class S05_symmetry {
 		
 		@Override
 		public int hashCode() {
-			int result = super.hashCode();
-			result = (31 * result) + color.hashCode();
-			return result;
+			return 31 * (31 + super.hashCode()) + color.hashCode();
 		}
 		
 		@Override
@@ -78,6 +72,12 @@ public class S05_symmetry {
 			return color.equals(other.color) && super.equals(obj);
 		}
 	}
+	
+	
+	
+	
+	
+	
 	
 	
 	

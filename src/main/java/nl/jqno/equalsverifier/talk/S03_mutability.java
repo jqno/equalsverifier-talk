@@ -33,10 +33,7 @@ public class S03_mutability {
 
 		@Override
 		public int hashCode() {
-			int result = 1;
-			result = (31 * result) + x;
-			result = (31 * result) + y;
-			return result;
+			return 31 * (31 + x) + y;
 		}
 
 		@Override
@@ -49,6 +46,12 @@ public class S03_mutability {
 		}
 	}
 	
+
+	
+	
+	
+	
+
 	
 	
 	

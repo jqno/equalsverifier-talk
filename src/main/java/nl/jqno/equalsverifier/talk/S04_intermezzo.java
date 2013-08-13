@@ -72,4 +72,29 @@ public class S04_intermezzo {
 	
 	
 	
+	/*
+	 * One more thing.
+	 */
+	public enum Color {
+		RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
