@@ -50,7 +50,7 @@ public class S07_an_unsatisfying_solution {
 			Point other = (Point)obj;
 			return x == other.x && y == other.y;
 		}
-	}	
+	}
 	
 	
 	
