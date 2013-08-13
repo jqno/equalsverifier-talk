@@ -1,0 +1,150 @@
+package nl.jqno.equalsverifier.talk;
+
+import nl.jqno.equalsverifier.EqualsVerifier;
+import nl.jqno.equalsverifier.talk.S04_intermezzo.Color;
+import nl.jqno.equalsverifier.talk.helper.NonNull;
+
+import org.junit.Test;
+
+public class S09_canequal {
+	
+	
+	/*
+	 * But still... isn't there a way to add a value component?
+	 */
+	
+	
+	
+	/*
+	 * It turns out, there is!
+	 * Martin Odersky, Lex Spoon and Bill Venners describe it in their Scala book.
+	 * 
+	 * But it's not trivial.
+	 */
+	
+	
+	
+	
+	
+	
+	public class Point {
+		private final int x;
+		private final int y;
+		
+		public Point(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+
+		@Override
+		public int hashCode() {
+			return 31 * (31 + x) + y;
+		}
+		
+		/*
+		 * Add a canEqual method:
+		 */
+		public boolean canEqual(Object obj) {
+			return obj instanceof Point;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (!(obj instanceof Point)) {
+				return false;
+			}
+			Point other = (Point)obj;
+			/*
+			 * And then if obj is compatible with us:
+			 */
+			return other.canEqual(this) && x == other.x && y == other.y;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * Leaf nodes should be final.
+	 * 
+	 * (Or at least, have final equals and hashCode methods.)
+	 */
+	public final class ColorPoint extends Point {
+		@NonNull private final Color color;
+		
+		public ColorPoint(int x, int y, Color color) {
+			super(x, y);
+			this.color = color;
+		}
+
+		@Override
+		public int hashCode() {
+			return 31 * (31 + super.hashCode()) + color.hashCode();
+		}
+		
+		/*
+		 * We do the same here:
+		 */
+		@Override
+		public boolean canEqual(Object obj) {
+			return obj instanceof ColorPoint;
+		}
+		
+		@Override
+		public boolean equals(Object obj) {
+			if (!(obj instanceof ColorPoint)) {
+				return false;
+			}
+			ColorPoint other = (ColorPoint)obj;
+			return other.canEqual(this) && color.equals(other.color) && super.equals(obj);
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * EqualsVerifier gets a bit more involved:
+	 */
+	
+	@Test
+	public void equalsverifier_on_point() {
+		EqualsVerifier.forClass(Point.class)
+				.withRedefinedSubclass(ColorPoint.class)
+				.verify();
+	}
+	
+	@Test
+	public void equalsverifier_on_color_point() {
+		EqualsVerifier.forClass(ColorPoint.class)
+				.withRedefinedSuperclass()
+				.verify();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
