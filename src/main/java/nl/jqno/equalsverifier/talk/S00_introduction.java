@@ -14,7 +14,7 @@ public class S00_introduction {
 	 * 
 	 * 
 	 * 
-	 *                                Jan Ouwens
+	 *                           -by- Jan Ouwens
 	 * 
 	 */
 	
@@ -29,8 +29,11 @@ public class S00_introduction {
 	
 	/*
 	 * In this talk:
+	 * 
 	 * - common pitfalls
+	 * 
 	 * - how to avoid them
+	 * 
 	 * - how to test them
 	 */
 	
@@ -44,13 +47,8 @@ public class S00_introduction {
 	
 	
 	
-	
-	
-	
 	/*
-	 * Java-centric
-	 * 
-	 * Though most of this applies to C#, as well
+	 * Java-centric, though most of this applies to C# as well.
 	 */
 	
 	
@@ -71,34 +69,11 @@ public class S00_introduction {
 	
 	
 	
-
-	/* 
-	 * Resources:
-	 * 
-	 * - "How to Write an Equality Method in Java" by Odersky, Spoon & Venners
-	 *   http://www.artima.com/lejava/articles/equality.html
-	 * 
-	 * - Effective Java, by Joshua Bloch
-	 * 
-	 * - Effective C#, by Bill Wagner
-	 * 
-	 * - EqualsVerifier, by me :)
-	 */
-	
-	
-	
-	
 	
 	
 
-	
-	
-	
-	
-	
-	
 	/*
-	 * Our running example
+	 * Our running example.
 	 */
 	public class Point {
 		private int x;
