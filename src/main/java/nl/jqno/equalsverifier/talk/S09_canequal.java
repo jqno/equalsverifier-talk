@@ -1,7 +1,7 @@
 package nl.jqno.equalsverifier.talk;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
-import nl.jqno.equalsverifier.talk.S04_intermezzo.Color;
+import nl.jqno.equalsverifier.talk.helper.Color;
 import nl.jqno.equalsverifier.talk.helper.NonNull;
 
 import org.junit.Test;

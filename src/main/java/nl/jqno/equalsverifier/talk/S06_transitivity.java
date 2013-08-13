@@ -6,8 +6,8 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.List;
 
-import nl.jqno.equalsverifier.talk.S04_intermezzo.Color;
 import nl.jqno.equalsverifier.talk.S05_symmetry.Point;
+import nl.jqno.equalsverifier.talk.helper.Color;
 import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
 
 import org.junit.Ignore;

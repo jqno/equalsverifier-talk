@@ -1,7 +1,7 @@
 package nl.jqno.equalsverifier.talk;
 
 import static org.junit.Assert.assertTrue;
-import nl.jqno.equalsverifier.talk.S04_intermezzo.Color;
+import nl.jqno.equalsverifier.talk.helper.Color;
 import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
 
 import org.junit.Ignore;
