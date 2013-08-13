@@ -11,7 +11,7 @@ public class S05_symmetry {
 	/*
 	 * Let's start with an immutable Point.
 	 */
-	public class Point {
+	public static class Point {
 		private final int x;
 		private final int y;
 		
