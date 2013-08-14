@@ -1,16 +1,22 @@
 package nl.jqno.equalsverifier.talk;
 
 public class S10_thanks {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Thank you!
 	 * 
 	 * Do I still have time for questions?
 	 */
 
-	
-	
-	
-	
 
 	/* 
 	 * References:
@@ -45,9 +51,7 @@ public class S10_thanks {
 	
 	
 	
-	
-	
-	/*
+	/*            ________  ______  __    __
 	 *           |        \|      \|  \  |  \
 	 *           | $$$$$$$$ \$$$$$$| $$\ | $$
 	 *           | $$__      | $$  | $$$\| $$
@@ -57,6 +61,11 @@ public class S10_thanks {
 	 *           | $$      |   $$ \| $$  \$$$
 	 *            \$$       \$$$$$$ \$$   \$$
 	 */
+	
+	
+	
+	
+	
 	
 	
 	

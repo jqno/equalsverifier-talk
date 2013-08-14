@@ -6,6 +6,15 @@ import org.junit.Test;
 
 public class S08_liskov_substitution_principle {
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Liskov Substitution Principle:
 	 * 
@@ -13,8 +22,19 @@ public class S08_liskov_substitution_principle {
 	 * - then objects of type T may be replaced with objects of type S
 	 * - and nothing will break.
 	 */
-
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -47,11 +67,7 @@ public class S08_liskov_substitution_principle {
 			Point other = (Point)obj;
 			return x == other.x && y == other.y;
 		}
-	}	
-	
-
-	
-	
+	}
 	
 	
 	
@@ -88,10 +104,19 @@ public class S08_liskov_substitution_principle {
 	}
 	
 	
-
 	
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -112,6 +137,16 @@ public class S08_liskov_substitution_principle {
 			return x == other.x && y == other.y;
 		}
 	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

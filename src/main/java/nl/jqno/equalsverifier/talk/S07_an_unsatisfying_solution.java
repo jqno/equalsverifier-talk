@@ -9,6 +9,14 @@ import org.junit.Test;
 public class S07_an_unsatisfying_solution {
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * "There is no way to extend an instantiable class and add a value component 
 	 * while preserving the equals contract."
@@ -23,7 +31,22 @@ public class S07_an_unsatisfying_solution {
 	 * OK... I give up.
 	 */
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -53,6 +76,22 @@ public class S07_an_unsatisfying_solution {
 			return x == other.x && y == other.y;
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -97,6 +136,11 @@ public class S07_an_unsatisfying_solution {
 	
 	
 	
+	
+	
+	
+	
+	
 	@Test
 	public void equalsverifier_on_point() {
 		EqualsVerifier.forClass(Point.class)
@@ -116,6 +160,20 @@ public class S07_an_unsatisfying_solution {
 	 * 
 	 * It says we're breaking the Liskov Substitution Principle.
 	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

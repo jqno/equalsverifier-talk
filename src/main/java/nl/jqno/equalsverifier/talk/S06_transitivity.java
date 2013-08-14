@@ -14,6 +14,16 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class S06_transitivity {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * We can fix that!
 	 * 
@@ -69,9 +79,6 @@ public class S06_transitivity {
 	
 	
 	
-	
-	
-	
 	private Point simplePoint = new Point(1, 2);
 	private ColorPoint colorPoint = new ColorPoint(1, 2, Color.INDIGO);
 	
@@ -83,7 +90,13 @@ public class S06_transitivity {
 		assertTrue(simplePoint.equals(colorPoint));
 		assertTrue(colorPoint.equals(simplePoint));
 	}
-
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -119,7 +132,16 @@ public class S06_transitivity {
 	
 	
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	/*
@@ -169,9 +191,6 @@ public class S06_transitivity {
 	
 	
 	
-	
-	
-	
 	/*
 	 * Again: EqualsVerifier catches this.
 	 */
@@ -181,4 +200,24 @@ public class S06_transitivity {
 		EqualsVerifier.forClass(ColorPoint.class)
 				.verify();
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

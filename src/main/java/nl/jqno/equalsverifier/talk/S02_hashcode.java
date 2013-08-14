@@ -12,6 +12,14 @@ import org.junit.Test;
 public class S02_hashcode {
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Let's start with Point again.
 	 * This time, it has the correct equals signature.
@@ -35,8 +43,39 @@ public class S02_hashcode {
 		}
 	}
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * Two equal points.
+	 */
 	private Point p1 = new Point(0, 1);
 	private Point p2 = new Point(0, 1);
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -73,6 +112,19 @@ public class S02_hashcode {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * The hashCode contract:
 	 * 
@@ -98,6 +150,15 @@ public class S02_hashcode {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Let's write a hashCode with a proper distribution.
 	 */
@@ -112,7 +173,16 @@ public class S02_hashcode {
 			return result;
 		}
 	 */
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

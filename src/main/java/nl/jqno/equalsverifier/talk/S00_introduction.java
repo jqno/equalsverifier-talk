@@ -3,6 +3,14 @@ package nl.jqno.equalsverifier.talk;
 public class S00_introduction {
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Not all equals() methods are created equal
 	 * 
@@ -27,6 +35,16 @@ public class S00_introduction {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * In this talk:
 	 * 
@@ -37,7 +55,16 @@ public class S00_introduction {
 	 * - how to test them.
 	 */
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -70,8 +97,6 @@ public class S00_introduction {
 	
 	
 	
-	
-
 	/*
 	 * Our running example.
 	 */
@@ -92,6 +117,16 @@ public class S00_introduction {
 			return y;
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

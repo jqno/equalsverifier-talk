@@ -1,12 +1,19 @@
 package nl.jqno.equalsverifier.talk;
 
 public class S04_intermezzo {
-
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Why did EqualsVerifier say that "equals is not final"?
 	 */
-
 	
 	
 	
@@ -47,11 +54,22 @@ public class S04_intermezzo {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * (Our mutable Point breaks consistency.)
 	 */
-	
-
 	
 	
 	
@@ -78,6 +96,7 @@ public class S04_intermezzo {
 	public enum Color {
 		RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
 	}
+	
 	
 	
 	

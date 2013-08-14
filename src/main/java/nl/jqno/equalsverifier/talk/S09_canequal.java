@@ -9,9 +9,34 @@ import org.junit.Test;
 public class S09_canequal {
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * But still... isn't there a way to add a value component?
 	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -21,6 +46,20 @@ public class S09_canequal {
 	 * 
 	 * But it's not trivial.
 	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -60,6 +99,14 @@ public class S09_canequal {
 			return other.canEqual(this) && x == other.x && y == other.y;
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -122,6 +169,11 @@ public class S09_canequal {
 	
 	
 	
+	
+	
+	
+	
+	
 	/*
 	 * EqualsVerifier gets a bit more involved:
 	 */
@@ -147,6 +199,18 @@ public class S09_canequal {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * That's because EqualsVerifier wants to:
 	 * 
@@ -154,6 +218,8 @@ public class S09_canequal {
 	 * 
 	 * - make the uncommon stuff possible.
 	 */
+	
+	
 	
 	
 	

@@ -8,6 +8,16 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class S05_symmetry {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Let's start with an immutable Point.
 	 */
@@ -35,7 +45,14 @@ public class S05_symmetry {
 		}
 	}
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -96,7 +113,6 @@ public class S05_symmetry {
 	
 	
 	
-
 	/*
 	 * OK, let's define some test data.
 	 */
@@ -146,7 +162,14 @@ public class S05_symmetry {
 	
 	
 	
-
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Why do we care about symmetry?
 	 * 
@@ -163,6 +186,17 @@ public class S05_symmetry {
 		EqualsVerifier.forClass(ColorPoint.class)
 				.verify();
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

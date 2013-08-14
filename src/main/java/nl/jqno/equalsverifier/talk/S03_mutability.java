@@ -12,6 +12,15 @@ import org.junit.Test;
 
 public class S03_mutability {
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Let's start with Point again. This time, it has a hashCode.
 	 * 
@@ -46,25 +55,13 @@ public class S03_mutability {
 		}
 	}
 	
-
-	
-	
-	
-	
-
 	
 	
 	
 	
 	
-	/*
-	 * Let's set up a test.
-	 */
-	private Point p = new Point(1, 2);
-	private Set<Point> set = new HashSet<>();
-	{
-		set.add(p);
-	}
+	
+	
 	
 	
 	
@@ -82,6 +79,12 @@ public class S03_mutability {
 	 * 
 	 * Well...
 	 */
+	private Point p = new Point(1, 2);
+	private Set<Point> set = new HashSet<>();
+	{
+		set.add(p);
+	}
+	
 	@Test
 	public void object_should_still_be_findable_in_a_collection_even_if_it_changed() {
 		assertTrue(set.contains(p));
@@ -93,6 +96,17 @@ public class S03_mutability {
 		
 		assertTrue(set.contains(p));  //  <-- Fails... PROBABLY.
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -127,6 +141,19 @@ public class S03_mutability {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * So... how do we fix this?
 	 * 
@@ -135,6 +162,14 @@ public class S03_mutability {
 	 * 
 	 * Solution 2: use immutable data classes.
 	 */
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -179,6 +214,25 @@ public class S03_mutability {
 		}
 	}	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * And an EqualsVerifier test.
 	 */
@@ -188,6 +242,17 @@ public class S03_mutability {
 		EqualsVerifier.forClass(ImmutablePoint.class)
 				.verify();
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

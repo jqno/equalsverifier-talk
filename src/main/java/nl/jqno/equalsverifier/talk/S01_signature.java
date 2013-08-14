@@ -12,7 +12,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 public class S01_signature {
-
+	
 	
 	
 	
@@ -47,6 +47,17 @@ public class S01_signature {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Let's create some example data.
 	 */
@@ -63,6 +74,17 @@ public class S01_signature {
 		assertTrue(p1.equals(p2));
 		assertFalse(p1.equals(p3));
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
@@ -97,6 +119,12 @@ public class S01_signature {
 	
 	
 	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Once more, with EqualsVerifier.
 	 */
@@ -106,6 +134,10 @@ public class S01_signature {
 		EqualsVerifier.forClass(Point.class)
 				.verify();
 	}
+	
+	
+	
+	
 	
 	
 	
@@ -147,12 +179,20 @@ public class S01_signature {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * Note: C# differs here.
 	 * 
 	 * If you implement IEquatable<T>, you need BOTH forms.
 	 */
-
+	
 	
 	
 	
