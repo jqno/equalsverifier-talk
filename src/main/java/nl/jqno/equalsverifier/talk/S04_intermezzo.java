@@ -68,7 +68,7 @@ public class S04_intermezzo {
 	
 	
 	/*
-	 * (Our mutable Point breaks consistency.)
+	 * Our mutable Point broke consistency, BTW.
 	 */
 	
 	
@@ -91,7 +91,7 @@ public class S04_intermezzo {
 	
 	
 	/*
-	 * One more thing.
+	 * One last thing.
 	 */
 	public enum Color {
 		RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
