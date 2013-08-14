@@ -6,9 +6,10 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.List;
 
+import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.talk.S05_symmetry.Point;
 import nl.jqno.equalsverifier.talk.helper.Color;
-import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
+import nl.jqno.equalsverifier.talk.helper.NonNull;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -30,7 +31,7 @@ public class S06_transitivity {
 	 * We'll use the previous slide's Point, and define a new ColorPoint.
 	 */
 	public class ColorPoint extends Point {
-		private final Color color;
+		@NonNull private final Color color;
 		
 		public ColorPoint(int x, int y, Color color) {
 			super(x, y);
