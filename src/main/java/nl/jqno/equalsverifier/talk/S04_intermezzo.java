@@ -1,5 +1,10 @@
 package nl.jqno.equalsverifier.talk;
 
+import nl.jqno.equalsverifier.EqualsVerifier;
+import nl.jqno.equalsverifier.talk.S03_mutability.ImmutablePoint;
+
+import org.junit.Test;
+
 public class S04_intermezzo {
 	
 	
@@ -12,8 +17,14 @@ public class S04_intermezzo {
 	
 	
 	/*
-	 * Why did EqualsVerifier say that "equals is not final"?
+	 * Actually, I've been lying a little bit. Let's do that last thing again.
 	 */
+	@Test
+	public void equalsverifier_on_immutable_point() {
+		EqualsVerifier.forClass(ImmutablePoint.class)
+//				.suppress(Warning.STRICT_INHERITANCE)
+				.verify();
+	}
 	
 	
 	

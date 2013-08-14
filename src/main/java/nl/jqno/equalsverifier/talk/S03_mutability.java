@@ -5,7 +5,7 @@ import static org.junit.Assert.assertTrue;
 import java.util.HashSet;
 import java.util.Set;
 
-import nl.jqno.equalsverifier.EqualsVerifier;
+import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
 
 import org.junit.Ignore;
 import org.junit.Test;
@@ -155,6 +155,34 @@ public class S03_mutability {
 	
 	
 	/*
+	 * EqualsVerifier isn't happy with this, either.
+	 */
+	@Ignore
+//	@Test
+	public void equalsverifier_on_mutable_point() {
+		EqualsVerifier.forClass(Point.class)
+				.verify();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
 	 * So... how do we fix this?
 	 * 
 	 * Solution 1: use immutable id fields, like a database.
@@ -238,7 +266,7 @@ public class S03_mutability {
 	 */
 	@Ignore
 //	@Test
-	public void equalsverifier() {
+	public void equalsverifier_on_immutable_point() {
 		EqualsVerifier.forClass(ImmutablePoint.class)
 				.verify();
 	}
