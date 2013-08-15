@@ -79,7 +79,7 @@ public class S03_mutability {
 	 * 
 	 * Well...
 	 */
-	private Point p = new Point(1, 2);
+	private Point p = new Point(0, 1);
 	private Set<Point> set = new HashSet<>();
 	{
 		set.add(p);

@@ -80,8 +80,8 @@ public class S06_transitivity {
 	
 	
 	
-	private Point simplePoint = new Point(1, 2);
-	private ColorPoint colorPoint = new ColorPoint(1, 2, Color.INDIGO);
+	private Point simplePoint = new Point(0, 1);
+	private ColorPoint colorPoint = new ColorPoint(0, 1, Color.INDIGO);
 	
 	/*
 	 * It's symmetrical now!
@@ -114,8 +114,8 @@ public class S06_transitivity {
 	/*
 	 * However... is it transitive?
 	 */
-	private ColorPoint redPoint = new ColorPoint(1, 2, Color.RED);
-	private ColorPoint greenPoint = new ColorPoint(1, 2, Color.GREEN);
+	private ColorPoint redPoint = new ColorPoint(0, 1, Color.RED);
+	private ColorPoint greenPoint = new ColorPoint(0, 1, Color.GREEN);
 	
 	@Ignore
 //	@Test
