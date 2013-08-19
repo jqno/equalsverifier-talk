@@ -6,7 +6,7 @@ import nl.jqno.equalsverifier.talk.helper.NonNull;
 
 import org.junit.Test;
 
-public class S07_an_unsatisfying_solution {
+public class S07_getclass {
 	
 	
 	
@@ -18,38 +18,8 @@ public class S07_an_unsatisfying_solution {
 	
 	
 	/*
-	 * "There is no way to extend an instantiable class and add a value component 
-	 * while preserving the equals contract."
-	 * -- Joshua Bloch, Effective Java
+	 * Oh, I know... let's use getClass() instead of instanceof!
 	 */
-	
-	
-	/*
-	 * :( :( :(
-	 * 
-	 * 
-	 * OK... I give up.
-	 */
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	public class Point {
 		private final int x;
 		private final int y;
@@ -66,9 +36,6 @@ public class S07_an_unsatisfying_solution {
 
 		@Override
 		public boolean equals(Object obj) {
-			/*
-			 * Use getClass instead of instanceof
-			 */
 			if (obj == null || getClass() != obj.getClass()) {
 				return false;
 			}
@@ -155,6 +122,25 @@ public class S07_an_unsatisfying_solution {
 				.verify();
 	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	/*
 	 * But... what's that "usingGetClass" thingy doing there?
 	 * 

@@ -58,6 +58,11 @@ public class S08_liskov_substitution_principle {
 		public int hashCode() {
 			return 31 * (31 + x) + y;
 		}
+		
+		@Override
+		public String toString() {
+			return String.format("%s: %s,%s", getClass().getSimpleName(), x, y);
+		}
 
 		@Override
 		public boolean equals(Object obj) {
@@ -123,7 +128,10 @@ public class S08_liskov_substitution_principle {
 	
 	
 	/*
-	 * I recommend using 'instanceof' instead of 'getClass' in all cases.
+	 * This is a violation of the LSP.
+	 * 
+	 * 
+	 * You should always use 'instanceof' instead of 'getClass'.
 	 */
 	
 	
@@ -136,6 +144,43 @@ public class S08_liskov_substitution_principle {
 			Point other = (Point)obj;
 			return x == other.x && y == other.y;
 		}
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * "There is no way to extend an instantiable class and add a value component 
+	 * while preserving the equals contract."
+	 * -- Joshua Bloch, Effective Java
+	 * 
+	 * 
+	 *    :(  :(  :(
+	 */
+	
+	
+
+	
+	/*
+	 * Oh BTW, for the C# crowd:
+	 * 
+	 * Josh Bloch is kind of the Eric Lippert of Java.
 	 */
 	
 	

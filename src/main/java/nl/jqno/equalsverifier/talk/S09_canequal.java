@@ -4,6 +4,7 @@ import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.talk.helper.Color;
 import nl.jqno.equalsverifier.talk.helper.NonNull;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class S09_canequal {
@@ -18,7 +19,9 @@ public class S09_canequal {
 	
 	
 	/*
-	 * But still... isn't there a way to add a value component?
+	 * But... that's kind of sad.
+	 * 
+	 * Isn't there another way? 
 	 */
 	
 	
@@ -41,9 +44,36 @@ public class S09_canequal {
 	
 	
 	/*
-	 * It turns out, there is!
-	 * Martin Odersky, Lex Spoon and Bill Venners describe it in their Scala book.
+	 * COULD JOSH BLOCH BE WRONG!?
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * As it turns out, he could!
 	 * 
+	 * Martin Odersky, Lex Spoon and Bill Venners describe it in their Scala book.
+	 */
+	
+	
+	
+	/*
 	 * But it's not trivial.
 	 */
 	
@@ -79,6 +109,12 @@ public class S09_canequal {
 		public int hashCode() {
 			return 31 * (31 + x) + y;
 		}
+		
+		
+		
+		
+		
+		
 		
 		/*
 		 * Add a canEqual method:
@@ -136,6 +172,12 @@ public class S09_canequal {
 		public int hashCode() {
 			return 31 * (31 + super.hashCode()) + color.hashCode();
 		}
+		
+		
+		
+		
+		
+		
 		
 		/*
 		 * Note that now, obj must instanceof ColorPoint!
@@ -218,6 +260,41 @@ public class S09_canequal {
 	 * 
 	 * - make the uncommon stuff possible.
 	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * But it also works on our Proxy!
+	 */
+	public final class Point$$Proxy extends Point {
+		public Point$$Proxy(int x, int y) {
+			super(x, y);
+		}
+	}
+	
+	@Ignore
+//	@Test
+	public void equalsverifier_on_proxy() {
+		EqualsVerifier.forClass(Point$$Proxy.class)
+				.verify();
+	}
 	
 	
 	
