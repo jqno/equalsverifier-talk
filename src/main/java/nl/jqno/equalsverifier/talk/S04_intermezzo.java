@@ -1,6 +1,7 @@
 package nl.jqno.equalsverifier.talk;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
+import nl.jqno.equalsverifier.Warning;
 import nl.jqno.equalsverifier.talk.S03_mutability.ImmutablePoint;
 
 import org.junit.Test;
@@ -22,7 +23,7 @@ public class S04_intermezzo {
 	@Test
 	public void equalsverifier_on_immutable_point() {
 		EqualsVerifier.forClass(ImmutablePoint.class)
-//				.suppress(Warning.STRICT_INHERITANCE)
+				.suppress(Warning.STRICT_INHERITANCE)
 				.verify();
 	}
 	
@@ -46,8 +47,29 @@ public class S04_intermezzo {
 	
 	
 	/*
-	 * First, we need to know the equals contract:
-	 * 
+	 * First, we need to know the equals contract.
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/* 
 	 * - Reflexivity       x == x
 	 * 
 	 * - Symmetry          if x == y, then y == x
