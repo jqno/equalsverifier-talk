@@ -22,8 +22,8 @@ public class S05_symmetry {
 	 * Let's start with an immutable Point.
 	 */
 	public static class Point {
-		private final int x;
-		private final int y;
+		protected final int x;
+		protected final int y;
 		
 		public Point(int x, int y) {
 			this.x = x;
@@ -33,6 +33,11 @@ public class S05_symmetry {
 		@Override
 		public int hashCode() {
 			return 31 * (31 + x) + y;
+		}
+
+		@Override
+		public String toString() {
+			return String.format("Point: %s,%s", x, y);
 		}
 
 		@Override
@@ -80,6 +85,11 @@ public class S05_symmetry {
 			return 31 * (31 + super.hashCode()) + color.hashCode();
 		}
 		
+		@Override
+		public String toString() {
+			return String.format("ColorPoint: %s,%s,%s", x, y, color);
+		}
+		
 		/*
 		 * Think a moment: what could be wrong with this equals method?
 		 * It _does_ call super!
@@ -116,7 +126,7 @@ public class S05_symmetry {
 	/*
 	 * OK, let's define some test data.
 	 */
-	private Point simplePoint = new Point(0, 1);
+	private Point simplePoint     = new      Point(0, 1);
 	private ColorPoint colorPoint = new ColorPoint(0, 1, Color.INDIGO);
 	
 	
