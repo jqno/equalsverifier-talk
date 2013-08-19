@@ -1,6 +1,45 @@
 package nl.jqno.equalsverifier.talk;
 
-public class S10_thanks {
+public class S10_summary {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * Summary:
+	 * 
+	 * - Make sure you follow the contracts.
+	 * 
+	 * - Use final:
+	 *   - use it on fields.
+	 *   - use it on methods.
+	 *   - use it on classes.
+	 *   - use it EVERYWHERE.
+	 *   - final should be your default.
+	 *   - this is your mantra.
+	 * 
+	 * - Use instanceof, not getClass().
+	 * 
+	 * - If you can't avoid adding state to subclasses, use canEqual.
+	 * 
+	 * - EqualsVerifier helps you find problems.
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
