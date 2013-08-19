@@ -187,6 +187,7 @@ public class S03_mutability {
 	 * 
 	 * Solution 1: use immutable id fields, like a database.
 	 *  - you will lose semantic equality.
+	 *  - what if the object is new and still has id -1?
 	 * 
 	 * Solution 2: use immutable data classes.
 	 */
@@ -226,10 +227,7 @@ public class S03_mutability {
 
 		@Override
 		public int hashCode() {
-			int result = 1;
-			result = (31 * result) + x;
-			result = (31 * result) + y;
-			return result;
+			return 31 * (31 + x) + y;
 		}
 
 		@Override
