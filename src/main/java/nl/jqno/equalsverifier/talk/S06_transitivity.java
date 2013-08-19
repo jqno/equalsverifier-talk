@@ -44,6 +44,11 @@ public class S06_transitivity {
 		}
 		
 		@Override
+		public String toString() {
+			return String.format("ColorPoint: %s,%s,%s", x, y, color);
+		}
+		
+		@Override
 		public boolean equals(Object obj) {
 	        if (obj instanceof ColorPoint) {
 	            ColorPoint other = (ColorPoint)obj;
@@ -80,7 +85,7 @@ public class S06_transitivity {
 	
 	
 	
-	private Point simplePoint = new Point(0, 1);
+	private Point simplePoint     = new      Point(0, 1);
 	private ColorPoint colorPoint = new ColorPoint(0, 1, Color.INDIGO);
 	
 	/*
@@ -114,16 +119,16 @@ public class S06_transitivity {
 	/*
 	 * However... is it transitive?
 	 */
-	private ColorPoint redPoint = new ColorPoint(0, 1, Color.RED);
+	private ColorPoint redPoint   = new ColorPoint(0, 1, Color.RED);
 	private ColorPoint greenPoint = new ColorPoint(0, 1, Color.GREEN);
 	
 	@Ignore
 //	@Test
 	public void transitivity() {
-		assertTrue(redPoint.equals(simplePoint));
-		assertTrue(simplePoint.equals(greenPoint));
+		assertTrue(redPoint.equals(simplePoint));   // x == y
+		assertTrue(simplePoint.equals(greenPoint)); // y == z
 		
-		assertTrue(redPoint.equals(greenPoint));
+		assertTrue(redPoint.equals(greenPoint));    // x == z
 	}
 	
 	
