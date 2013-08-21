@@ -120,6 +120,17 @@ public class S00_introduction {
 	
 	
 	
+	public enum Color {
+		RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

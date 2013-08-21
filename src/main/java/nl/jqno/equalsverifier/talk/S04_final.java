@@ -5,7 +5,7 @@ import nl.jqno.equalsverifier.Warning;
 
 import org.junit.Test;
 
-public class S04_intermezzo {
+public class S04_final {
 	
 	
 	
@@ -194,32 +194,6 @@ public class S04_intermezzo {
 	/*
 	 * Our mutable Point broke consistency, BTW.
 	 */
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
-	 * One last thing.
-	 */
-	public enum Color {
-		RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
-	}
 	
 	
 	
