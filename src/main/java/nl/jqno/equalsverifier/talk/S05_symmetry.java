@@ -127,7 +127,7 @@ public class S05_symmetry {
 	 * OK, let's define some test data.
 	 */
 	private Point simplePoint     = new      Point(0, 1);
-	private ColorPoint colorPoint = new ColorPoint(0, 1, Color.INDIGO);
+	private ColorPoint colorPoint = new ColorPoint(0, 1, Color.RED);
 	
 	
 	
