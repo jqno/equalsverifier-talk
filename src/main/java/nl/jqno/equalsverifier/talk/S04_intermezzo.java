@@ -2,7 +2,6 @@ package nl.jqno.equalsverifier.talk;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.Warning;
-import nl.jqno.equalsverifier.talk.S03_mutability.ImmutablePoint;
 
 import org.junit.Test;
 
@@ -19,6 +18,71 @@ public class S04_intermezzo {
 	
 	/*
 	 * Actually, I've been lying a little bit. Let's do that last thing again.
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public class ImmutablePoint {
+		private final int x;
+		private final int y;
+		
+		public ImmutablePoint(int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
+
+		@Override
+		public int hashCode() {
+			return 31 * (31 + x) + y;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (!(obj instanceof ImmutablePoint)) {
+				return false;
+			}
+			ImmutablePoint other = (ImmutablePoint)obj;
+			return x == other.x && y == other.y;
+		}
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * In reality, I've been redirecting all EqualsVerifier calls to THIS.
 	 */
 	@Test
 	public void equalsverifier_on_immutable_point() {
@@ -47,6 +111,33 @@ public class S04_intermezzo {
 	
 	
 	/*
+	 * I think this is a pretty nice solution!
+	 * 
+	 * But putting making your classes final is not always an option.
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	 * How do we fix this?
+	 * 
 	 * First, we need to know the equals contract.
 	 */
 	
