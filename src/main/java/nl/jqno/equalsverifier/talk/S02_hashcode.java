@@ -32,6 +32,11 @@ public class S02_hashcode {
 			this.x = x;
 			this.y = y;
 		}
+		
+		@Override
+		public String toString() {
+			return String.format("Point: %s,%s", x, y);
+		}
 
 		@Override
 		public boolean equals(Object obj) {
