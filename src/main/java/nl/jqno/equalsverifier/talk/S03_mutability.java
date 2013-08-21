@@ -238,7 +238,7 @@ public class S03_mutability {
 			ImmutablePoint other = (ImmutablePoint)obj;
 			return x == other.x && y == other.y;
 		}
-	}	
+	}
 	
 	
 	
