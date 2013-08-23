@@ -155,6 +155,31 @@ public class S01 {
 	
 	
 	/*
+	 * Note: C# differs here.
+	 * 
+	 * If you implement IEquatable<T>, you need BOTH forms.
+	 */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
 	 * Here's a better implementation.
 	 */
 	
@@ -167,31 +192,6 @@ public class S01 {
 			return x == other.x && y == other.y;
 		}
 	*/
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
-	 * Note: C# differs here.
-	 * 
-	 * If you implement IEquatable<T>, you need BOTH forms.
-	 */
 	
 	
 	
