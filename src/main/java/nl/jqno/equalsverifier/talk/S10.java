@@ -29,6 +29,7 @@ public class S10 {
 	 * - If you can't avoid adding state to subclasses, use canEqual.
 	 * 
 	 * - EqualsVerifier helps you find problems.
+	 *   - Not for C# (yet) :(
 	 */
 	
 	
