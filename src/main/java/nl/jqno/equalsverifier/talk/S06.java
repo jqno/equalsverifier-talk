@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
-import nl.jqno.equalsverifier.talk.S05_symmetry.Point;
+import nl.jqno.equalsverifier.talk.S05.Point;
 import nl.jqno.equalsverifier.talk.helper.Color;
 import nl.jqno.equalsverifier.talk.helper.NonNull;
 
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class S06_transitivity {
+public class S06 {
 	
 	
 	

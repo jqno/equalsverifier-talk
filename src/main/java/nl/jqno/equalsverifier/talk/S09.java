@@ -7,7 +7,7 @@ import nl.jqno.equalsverifier.talk.helper.NonNull;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class S09_canequal {
+public class S09 {
 	
 	
 	

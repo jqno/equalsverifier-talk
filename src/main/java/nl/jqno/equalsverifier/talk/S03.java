@@ -10,7 +10,7 @@ import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class S03_mutability {
+public class S03 {
 	
 	
 	

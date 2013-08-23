@@ -6,7 +6,7 @@ import nl.jqno.equalsverifier.talk.helper.NonNull;
 
 import org.junit.Test;
 
-public class S07_getclass {
+public class S07 {
 	
 	
 	

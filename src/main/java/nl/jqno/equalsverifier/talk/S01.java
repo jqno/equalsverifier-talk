@@ -11,7 +11,7 @@ import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class S01_signature {
+public class S01 {
 	
 	
 	

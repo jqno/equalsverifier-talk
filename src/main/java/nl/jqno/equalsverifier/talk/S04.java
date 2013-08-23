@@ -5,7 +5,7 @@ import nl.jqno.equalsverifier.Warning;
 
 import org.junit.Test;
 
-public class S04_final {
+public class S04 {
 	
 	
 	

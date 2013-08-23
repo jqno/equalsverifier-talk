@@ -9,7 +9,7 @@ import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
 
 import org.junit.Test;
 
-public class S02_hashcode {
+public class S02 {
 	
 	
 	

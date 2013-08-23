@@ -4,7 +4,7 @@ import nl.jqno.equalsverifier.EqualsVerifier;
 
 import org.junit.Test;
 
-public class S08_liskov_substitution_principle {
+public class S08 {
 	
 	
 	

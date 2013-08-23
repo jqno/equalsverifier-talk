@@ -1,6 +1,6 @@
 package nl.jqno.equalsverifier.talk;
 
-public class S10_summary {
+public class S10 {
 	
 	
 	
