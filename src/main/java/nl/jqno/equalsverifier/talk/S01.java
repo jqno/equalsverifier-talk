@@ -155,31 +155,6 @@ public class S01 {
 	
 	
 	/*
-	 * Note: C# differs here.
-	 * 
-	 * If you implement IEquatable<T>, you need BOTH forms.
-	 */
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
 	 * Here's a better implementation.
 	 */
 	

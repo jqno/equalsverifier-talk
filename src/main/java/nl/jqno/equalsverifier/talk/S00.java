@@ -75,29 +75,6 @@ public class S00 {
 	
 	
 	/*
-	 * Java-centric, though most of this applies to C# as well.
-	 */
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
 	 * Our running example.
 	 */
 	public class Point {

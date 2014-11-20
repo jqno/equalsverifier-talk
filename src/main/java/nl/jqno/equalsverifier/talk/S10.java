@@ -29,7 +29,6 @@ public class S10 {
 	 * - If you can't avoid adding state to subclasses, use canEqual.
 	 * 
 	 * - EqualsVerifier helps you find problems.
-	 *   - Not for C# (yet) :(
 	 */
 	
 	
@@ -65,8 +64,6 @@ public class S10 {
 	 *   http://www.artima.com/lejava/articles/equality.html
 	 * 
 	 * - Effective Java, by Joshua Bloch
-	 * 
-	 * - Effective C#, by Bill Wagner
 	 * 
 	 * - EqualsVerifier, by me :)
 	 *   http://www.jqno.nl/equalsverifier

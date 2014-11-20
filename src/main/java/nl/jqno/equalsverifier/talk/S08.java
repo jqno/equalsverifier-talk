@@ -175,15 +175,6 @@ public class S08 {
 	 */
 	
 	
-
-	
-	/*
-	 * Oh BTW, for the C# crowd:
-	 * 
-	 * Josh Bloch is kind of the Eric Lippert of Java.
-	 */
-	
-	
 	
 	
 	
