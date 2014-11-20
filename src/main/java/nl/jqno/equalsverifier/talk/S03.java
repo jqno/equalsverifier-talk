@@ -42,7 +42,7 @@ public class S03 {
 
 		@Override
 		public int hashCode() {
-			return 31 * (31 + x) + y;
+			return 53 * (53 + x) + y;
 		}
 
 		@Override
@@ -225,7 +225,7 @@ public class S03 {
 
 		@Override
 		public int hashCode() {
-			return 31 * (31 + x) + y;
+			return 53 * (53 + x) + y;
 		}
 
 		@Override

@@ -172,30 +172,72 @@ public class S02 {
 	/*
 		@Override
 		public int hashCode() {
-			int result = 1;
+			int result = 17;
 			result = (31 * result) + x;
 			result = (31 * result) + y;
 			return result;
 		}
 	 */
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*
+	 * Actually, this one might even be slightly better!
+	 */
+
+
+	/*
+		@Override
+		public int hashCode() {
+			int result = 17;
+			result = (53 * result) + x;
+			result = (53 * result) + y;
+			return result;
+		}
+	 */  
+
+
+	/*
+	 * Why? Because 31...
+	 *
+	 * - is already used extensively by the Java API's, so there's more chance of overlap
+	 *
+	 * - 31's binary representation is 11111  :/
+	 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

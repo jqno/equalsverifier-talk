@@ -64,6 +64,9 @@ public class S10 {
 	 *   http://www.artima.com/lejava/articles/equality.html
 	 * 
 	 * - Effective Java, by Joshua Bloch
+	 *
+	 * - Project Lombok issue tracker
+	 *   https://code.google.com/p/projectlombok/issues/detail?id=625
 	 * 
 	 * - EqualsVerifier, by me :)
 	 *   http://www.jqno.nl/equalsverifier

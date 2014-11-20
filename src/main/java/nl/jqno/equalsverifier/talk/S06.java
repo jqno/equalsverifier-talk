@@ -40,7 +40,7 @@ public class S06 {
 		
 		@Override
 		public int hashCode() {
-			return 31 * (31 + super.hashCode()) + color.hashCode();
+			return 53 * (53 + super.hashCode()) + color.hashCode();
 		}
 		
 		@Override
