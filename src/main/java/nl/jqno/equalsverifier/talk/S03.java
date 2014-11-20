@@ -121,7 +121,6 @@ public class S03 {
 	 * 
 	 * Does that mean it's gone?
 	 */
-	@Ignore
 //	@Test
 	public void no_its_not_gone() {
 		p.setX(1337);
@@ -157,7 +156,6 @@ public class S03 {
 	/*
 	 * EqualsVerifier isn't happy with this, either.
 	 */
-	@Ignore
 //	@Test
 	public void equalsverifier_on_mutable_point() {
 		EqualsVerifier.forClass(Point.class)
@@ -262,7 +260,6 @@ public class S03 {
 	/*
 	 * And an EqualsVerifier test.
 	 */
-	@Ignore
 //	@Test
 	public void equalsverifier_on_immutable_point() {
 		EqualsVerifier.forClass(ImmutablePoint.class)

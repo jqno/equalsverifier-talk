@@ -289,7 +289,6 @@ public class S09 {
 		}
 	}
 	
-	@Ignore
 //	@Test
 	public void equalsverifier_on_proxy() {
 		EqualsVerifier.forClass(Point$$Proxy.class)

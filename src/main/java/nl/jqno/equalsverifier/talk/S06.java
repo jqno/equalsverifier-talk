@@ -122,7 +122,6 @@ public class S06 {
 	private ColorPoint redPoint   = new ColorPoint(0, 1, Color.RED);
 	private ColorPoint greenPoint = new ColorPoint(0, 1, Color.GREEN);
 	
-	@Ignore
 //	@Test
 	public void transitivity() {
 		assertTrue(redPoint.equals(simplePoint));   // x == y
@@ -160,7 +159,6 @@ public class S06 {
 		}
 	}
 	
-	@Ignore
 //	@Test
 	public void how_many_items_in_this_collection() {
 		addToUniquePointList(redPoint);
@@ -169,7 +167,6 @@ public class S06 {
 		assertEquals(/*???*/ -1, uniquePointList.size());
 	}
 	
-	@Ignore
 //	@Test
 	public void and_how_many_in_this_one() {
 		addToUniquePointList(simplePoint);
@@ -200,7 +197,6 @@ public class S06 {
 	/*
 	 * Again: EqualsVerifier catches this.
 	 */
-	@Ignore
 //	@Test
 	public void equalsverifier() {
 		EqualsVerifier.forClass(ColorPoint.class)
