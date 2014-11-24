@@ -157,6 +157,7 @@ public class S01 {
 	 */
 	
 	/*
+		@Override
 		public boolean equals(Object obj) {
 			if (!(obj instanceof Point)) {
 				return false;
