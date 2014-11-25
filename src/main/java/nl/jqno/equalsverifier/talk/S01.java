@@ -8,7 +8,6 @@ import java.util.List;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class S01 {

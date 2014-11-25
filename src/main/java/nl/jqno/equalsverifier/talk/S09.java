@@ -4,7 +4,6 @@ import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.talk.helper.Color;
 import nl.jqno.equalsverifier.talk.helper.NonNull;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class S09 {

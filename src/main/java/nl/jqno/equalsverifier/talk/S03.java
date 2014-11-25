@@ -7,7 +7,6 @@ import java.util.Set;
 
 import nl.jqno.equalsverifier.talk.helper.EqualsVerifier;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 public class S03 {
