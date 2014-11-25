@@ -113,7 +113,7 @@ public class S04 {
 	/*
 	 * I think this is a pretty nice solution!
 	 * 
-	 * But putting making your classes final is not always an option.
+	 * But making your classes final is not always an option.
 	 */
 	
 	
