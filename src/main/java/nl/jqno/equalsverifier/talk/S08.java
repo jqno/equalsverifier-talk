@@ -22,8 +22,11 @@ public class S08 {
 	 * - then objects of type T may be replaced with objects of type S
 	 * - and nothing will break.
 	 */
-	
-	
+
+
+	/*
+	 * This is the basis for all of Object-Oriented Programming.
+	 */
 	
 	
 	
