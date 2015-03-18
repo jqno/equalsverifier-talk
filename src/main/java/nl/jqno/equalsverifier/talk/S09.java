@@ -1,5 +1,6 @@
 package nl.jqno.equalsverifier.talk;
 
+import static org.junit.Assert.assertEquals;
 import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.talk.helper.Color;
 
@@ -285,6 +286,13 @@ public class S09 {
 		public Point$$Proxy(int x, int y) {
 			super(x, y);
 		}
+	}
+	
+//	@Test
+	public void equals_on_proxy() {
+		Point p = new Point(1, 2);
+		Point q = new Point$$Proxy(1, 2);
+		assertEquals(p, q);
 	}
 	
 //	@Test
