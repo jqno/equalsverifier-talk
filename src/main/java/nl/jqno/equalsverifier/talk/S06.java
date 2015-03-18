@@ -122,10 +122,10 @@ public class S06 {
 	
 //	@Test
 	public void transitivity() {
-		assertTrue(redPoint.equals(simplePoint));   // x == y
-		assertTrue(simplePoint.equals(greenPoint)); // y == z
+		assertTrue(redPoint.equals(simplePoint));   // Apple  == Banana
+		assertTrue(simplePoint.equals(greenPoint)); // Banana == Orange
 		
-		assertTrue(redPoint.equals(greenPoint));    // x == z
+		assertTrue(redPoint.equals(greenPoint));    // Apple  == Orange
 	}
 	
 	

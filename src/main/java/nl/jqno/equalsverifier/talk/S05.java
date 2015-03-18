@@ -152,12 +152,12 @@ public class S05 {
 	 */
 	@Test
 	public void simple_point_is_equal_to_color_point() {
-		assertTrue(simplePoint.equals(colorPoint));
+		assertTrue(simplePoint.equals(colorPoint));    // Apple == Orange
 	}
 	
 	@Test
 	public void color_point_is_equal_to_simple_point() {
-		assertTrue(colorPoint.equals(simplePoint));
+		assertTrue(colorPoint.equals(simplePoint));    // Orange == Apple
 	}
 	
 	

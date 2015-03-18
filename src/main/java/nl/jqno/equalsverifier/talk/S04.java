@@ -161,15 +161,15 @@ public class S04 {
 	
 	
 	/* 
-	 * - Reflexivity       x == x
+	 * - Reflexivity       Apple == Apple
 	 * 
-	 * - Symmetry          if x == y, then y == x
+	 * - Symmetry          if Apple == Orange, then Orange == Apple
 	 * 
-	 * - Transitivity      if x == y and y == z, then x == z
+	 * - Transitivity      if Apple == Banana and Banana == Orange, then Apple == Orange
 	 * 
-	 * - Consistency       if x == y now, then x == y always
+	 * - Consistency       if Apple == Orange now, then Apple == Orange always
 	 * 
-	 * - Non-nullity       x == null is never true
+	 * - Non-nullity       Apple == null is never true
 	 */
 	
 	

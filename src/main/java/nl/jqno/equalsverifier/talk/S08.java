@@ -19,8 +19,8 @@ public class S08 {
 	/*
 	 * Liskov Substitution Principle:
 	 * 
-	 * - if S is a subtype of T,
-	 * - then objects of type T may be replaced with objects of type S
+	 * - if Banana is a subtype of Fruit,
+	 * - then objects of type Fruit may be replaced with objects of type Banana
 	 * - and nothing will break.
 	 */
 
