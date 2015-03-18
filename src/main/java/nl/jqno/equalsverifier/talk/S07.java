@@ -36,6 +36,9 @@ public class S07 {
 
 		@Override
 		public boolean equals(Object obj) {
+			/*
+			 * Don't forget the null check!
+			 */
 			if (obj == null || getClass() != obj.getClass()) {
 				return false;
 			}
