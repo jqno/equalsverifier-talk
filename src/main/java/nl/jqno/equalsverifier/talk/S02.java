@@ -1,6 +1,6 @@
 package nl.jqno.equalsverifier.talk;
 
-import static junit.framework.Assert.assertTrue;
+import static org.junit.Assert.assertTrue;
 
 import java.util.HashSet;
 import java.util.Set;
