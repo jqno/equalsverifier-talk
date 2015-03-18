@@ -20,8 +20,8 @@ public class S10 {
 	 *   - use it on fields.
 	 *   - use it on methods.
 	 *   - use it on classes.
-	 *   - use it EVERYWHERE.
-	 *   - final should be your default.
+	 *   - use it on ALL THE THINGS.
+	 *   - final should be your default; deviate ONLY when necessary.
 	 *   - this is your mantra.
 	 * 
 	 * - Use instanceof, not getClass().
