@@ -9,7 +9,6 @@ import java.util.List;
 import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.talk.S05.Point;
 import nl.jqno.equalsverifier.talk.helper.Color;
-import nl.jqno.equalsverifier.talk.helper.NonNull;
 
 import org.junit.Test;
 
@@ -30,7 +29,7 @@ public class S06 {
 	 * We'll use the previous slide's Point, and define a new ColorPoint.
 	 */
 	public class ColorPoint extends Point {
-		@NonNull private final Color color;
+		private final Color color;
 		
 		public ColorPoint(int x, int y, Color color) {
 			super(x, y);

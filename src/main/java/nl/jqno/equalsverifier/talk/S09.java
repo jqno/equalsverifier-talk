@@ -2,7 +2,6 @@ package nl.jqno.equalsverifier.talk;
 
 import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.talk.helper.Color;
-import nl.jqno.equalsverifier.talk.helper.NonNull;
 
 import org.junit.Test;
 
@@ -160,7 +159,7 @@ public class S09 {
 	 * (Or at least, have final equals and hashCode methods.)
 	 */
 	public final class ColorPoint extends Point {
-		@NonNull private final Color color;
+		private final Color color;
 		
 		public ColorPoint(int x, int y, Color color) {
 			super(x, y);
