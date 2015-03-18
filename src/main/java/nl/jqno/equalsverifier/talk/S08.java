@@ -59,7 +59,7 @@ public class S08 {
 		}
 
 		@Override
-		public int hashCode() {
+		public final int hashCode() {
 			return 53 * (53 + x) + y;
 		}
 		
@@ -69,7 +69,7 @@ public class S08 {
 		}
 
 		@Override
-		public boolean equals(Object obj) {
+		public final boolean equals(Object obj) {
 			if (obj == null || getClass() != obj.getClass()) {
 				return false;
 			}
@@ -148,7 +148,7 @@ public class S08 {
 	
 	/*
 		@Override
-		public boolean equals(Object obj) {
+		public final boolean equals(Object obj) {
 			if (!(obj instanceof Point)) {
 				return false;
 			}
