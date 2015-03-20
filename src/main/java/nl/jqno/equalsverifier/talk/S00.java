@@ -23,7 +23,8 @@ public class S00 {
 	 * 
 	 * 
 	 *                           -by- Jan Ouwens
-	 * 
+	 *                                jan.ouwens@sogeti.nl
+	 *                                @jqno
 	 */
 	
 	

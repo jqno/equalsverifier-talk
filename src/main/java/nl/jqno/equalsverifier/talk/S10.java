@@ -70,6 +70,9 @@ public class S10 {
 	 * 
 	 * - EqualsVerifier, by me :)
 	 *   http://www.jqno.nl/equalsverifier
+	 * 
+	 * - This presentation:
+	 *   http://github.com/jqno/equalsverifier-talk
 	 */
 	
 	
