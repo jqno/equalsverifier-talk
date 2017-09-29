@@ -124,12 +124,9 @@ public class S03 {
     public void no_its_not_gone() {
         p.setX(1337);
 
-        boolean found = false;
-        for (Point maybe : set) {
-            if (maybe.equals(p)) {
-                found = true;
-            }
-        }
+        boolean found = set.stream()
+                .filter(maybe -> maybe.equals(p))
+                .count() == 1;
         assertTrue(found);
     }
 
