@@ -189,7 +189,7 @@ public class S05 {
     /*
      * EqualsVerifier catches this, too.
      */
-//	@Test
+	@Test
     public void equalsverifier() {
         EqualsVerifier.forClass(ColorPoint.class)
                 .verify();

@@ -96,7 +96,7 @@ public class S01 {
     /*
      * Well... no. No it doesn't. :(
      */
-//	@Test
+	@Test
     public void equals_works_correctly_with_collections() {
         List<Point> list = new ArrayList<>();
         list.add(p1);
@@ -126,7 +126,7 @@ public class S01 {
     /*
      * Once more, with EqualsVerifier.
      */
-//	@Test
+	@Test
     public void equalsverifier() {
         EqualsVerifier.forClass(Point.class)
                 .verify();

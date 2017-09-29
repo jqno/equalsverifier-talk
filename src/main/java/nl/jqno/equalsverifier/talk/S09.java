@@ -288,14 +288,14 @@ public class S09 {
         }
     }
 
-//	@Test
+	@Test
     public void equals_on_proxy() {
         Point p = new Point(1, 2);
         Point q = new Point$$Proxy(1, 2);
         assertEquals(p, q);
     }
 
-//	@Test
+	@Test
     public void equalsverifier_on_proxy() {
         EqualsVerifier.forClass(Point$$Proxy.class)
                 .verify();
