@@ -23,10 +23,36 @@ public class S00 {
      *
      *
      *                           -by- Jan Ouwens
-     *                                jan.ouwens@sogeti.nl
      *                                @jqno
      */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*
+	 * About me:
+	 *
+	 * - I work for CODE.STΛR
+	 *
+	 * - creator of EqualsVerifier
+	 *
+	 * - "Scala by day, Java by night"
+	 */
 
 
 
