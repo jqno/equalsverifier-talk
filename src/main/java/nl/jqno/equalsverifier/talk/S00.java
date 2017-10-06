@@ -11,7 +11,7 @@ public class S00 {
 
 
 
-    /*
+    /**
      * Not all equals() methods are created equal
      *
      *
@@ -44,7 +44,7 @@ public class S00 {
 
 
 
-	/*
+	/**
 	 * About me:
 	 *
 	 * - I work for CODE.STΛR
@@ -72,14 +72,14 @@ public class S00 {
 
 
 
-    /*
+    /**
      * In this talk:
      *
-     * - common pitfalls;
+     * - common pitfalls
      *
-     * - how to avoid them;
+     * - how to avoid them
      *
-     * - how to test them.
+     * - how to test them
      */
 
 
@@ -100,8 +100,7 @@ public class S00 {
 
 
 
-
-    /*
+    /**
      * Our running example.
      */
     public class Point {
@@ -113,38 +112,13 @@ public class S00 {
             this.y = y;
         }
 
-        public int getX() {
-            return x;
-        }
-
-        public int getY() {
-            return y;
+        @Override
+        public String toString() {
+            return "Point: " + x + "," + y;
         }
     }
-
-
 
     public enum Color {
         RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
