@@ -10,7 +10,7 @@ public class S08 {
      */
 
 
-    public final class Point {
+    public class Point {
         private final int x;
         private final int y;
 
