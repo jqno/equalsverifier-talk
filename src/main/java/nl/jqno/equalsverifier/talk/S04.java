@@ -3,15 +3,16 @@ package nl.jqno.equalsverifier.talk;
 import nl.jqno.equalsverifier.EqualsVerifier;
 import org.junit.Test;
 
-import java.util.HashSet;
-import java.util.Set;
-
-import static org.junit.Assert.assertTrue;
+import static junit.framework.TestCase.assertEquals;
 
 public class S04 {
 
     /**
-     * Consistency
+     *   S
+     *   O
+     *   Liskov Substitution Principle
+     *   I
+     *   D
      */
 
     public class Point {
@@ -23,23 +24,7 @@ public class S04 {
             this.y = y;
         }
 
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-
-            Point point = (Point) o;
-
-            if (x != point.x) return false;
-            return y == point.y;
-        }
-
-        @Override
-        public int hashCode() {
-            int result = x;
-            result = 31 * result + y;
-            return result;
-        }
+        // GENERATE HERE
 
         @Override
         public String toString() {
@@ -50,20 +35,17 @@ public class S04 {
 
     @Test
     public void whats_the_problem() {
-        Point point = new Point(1, 1);
+        Point p = new Point(1, 1);
+        Point sub = new Point(1, 1) {};
 
-        Set<Point> pts = new HashSet<>();
-        pts.add(point);
-
-        point.x = 2;
-        assertTrue(pts.contains(point));
+        assertEquals(p, sub);
     }
 
 
     @Test
     public void equalsverifier() {
         EqualsVerifier.forClass(Point.class)
-                .usingGetClass()
+//                .usingGetClass()
                 .verify();
     }
 }
