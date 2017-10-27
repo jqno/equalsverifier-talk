@@ -8,9 +8,9 @@ import static org.junit.Assert.assertEquals;
 
 public class S06 {
 
-    /**
-     * Transitivity
-     */
+
+
+
 
     public class Point {
         protected final int x;
@@ -44,6 +44,19 @@ public class S06 {
             return "Point: " + x + "," + y;
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     public class ColorPoint extends Point {
         private final Color color;
@@ -83,6 +96,18 @@ public class S06 {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void solves_symmetry() {
         Point p = new Point(1, 1);
@@ -91,6 +116,18 @@ public class S06 {
         assertEquals(p, q);
         assertEquals(q, p);
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     @Test
@@ -105,9 +142,29 @@ public class S06 {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void equalsverifier() {
         EqualsVerifier.forClass(ColorPoint.class)
                 .verify();
     }
+
+    /**
+     * Transitivity
+     */
+
+
+
+
 }

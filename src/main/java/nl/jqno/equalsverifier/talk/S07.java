@@ -6,9 +6,9 @@ import org.junit.Test;
 
 public class S07 {
 
-    /**
-     * canEqual
-     */
+
+
+
 
     public class Point {
         protected final int x;
@@ -48,6 +48,19 @@ public class S07 {
         }
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     public final class ColorPoint extends Point {
         private final Color color;
 
@@ -86,6 +99,18 @@ public class S07 {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void equalsverifier() {
         EqualsVerifier.forClass(Point.class)
@@ -96,4 +121,12 @@ public class S07 {
                 .withRedefinedSuperclass()
                 .verify();
     }
+
+    /**
+     * Correct! But awkward...
+     */
+
+
+
+
 }

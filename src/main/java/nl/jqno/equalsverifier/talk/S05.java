@@ -8,9 +8,9 @@ import static org.junit.Assert.assertEquals;
 
 public class S05 {
 
-    /**
-     * Symmetry
-     */
+
+
+
 
     public class Point {
         protected final int x;
@@ -30,6 +30,18 @@ public class S05 {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void liskov_substitution_principle_solved() {
         Point p = new Point(1, 1);
@@ -37,6 +49,18 @@ public class S05 {
 
         assertEquals(p, sub);
     }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     public class ColorPoint extends Point {
@@ -56,6 +80,18 @@ public class S05 {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void whats_the_problem() {
         Point p = new Point(1, 1);
@@ -66,9 +102,30 @@ public class S05 {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void equalsverifier() {
         EqualsVerifier.forClass(ColorPoint.class)
                 .verify();
     }
+
+    /**
+     * Symmetry
+     */
+
+
+
+
+
 }

@@ -6,11 +6,6 @@ public class S00 {
 
 
 
-
-
-
-
-
     /**
      * Not all equals() methods are created equal
      *
@@ -40,16 +35,12 @@ public class S00 {
 
 
 
-
-
-
-
 	/**
 	 * About me:
 	 *
-	 * - I work for CODE.STΛR
+	 * - CODE.STΛR
 	 *
-	 * - creator of EqualsVerifier
+	 * - EqualsVerifier
 	 *
 	 * - "Scala by day, Java by night"
 	 */
@@ -68,23 +59,15 @@ public class S00 {
 
 
 
-
-
-
-
     /**
      * In this talk:
      *
-     * - common pitfalls
+     * - equals()
      *
-     * - how to avoid them
+     * - pitfalls in equals()
      *
-     * - how to test them
+     * - testing equals()
      */
-
-
-
-
 
 
 
@@ -121,4 +104,8 @@ public class S00 {
     public enum Color {
         RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET
     }
+
+
+
+
 }

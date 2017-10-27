@@ -7,13 +7,9 @@ import static junit.framework.TestCase.assertEquals;
 
 public class S04 {
 
-    /**
-     *   S
-     *   O
-     *   Liskov Substitution Principle
-     *   I
-     *   D
-     */
+
+
+
 
     public class Point {
         private final int x;
@@ -33,6 +29,18 @@ public class S04 {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void whats_the_problem() {
         Point p = new Point(1, 1);
@@ -42,10 +50,35 @@ public class S04 {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void equalsverifier() {
         EqualsVerifier.forClass(Point.class)
 //                .usingGetClass()
                 .verify();
     }
+
+    /**
+     *   S
+     *   O
+     *   Liskov Substitution Principle
+     *   I
+     *   D
+     */
+
+
+
+
+
 }

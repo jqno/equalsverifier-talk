@@ -11,9 +11,9 @@ import static org.junit.Assert.assertTrue;
 
 public class S03 {
 
-    /**
-     * Consistency
-     */
+
+
+
 
     public final class Point {
         private int x;
@@ -48,6 +48,18 @@ public class S03 {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void whats_the_problem() {
         Point point = new Point(1, 1);
@@ -60,9 +72,30 @@ public class S03 {
     }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     public void equalsverifier() {
         EqualsVerifier.forClass(Point.class)
                 .verify();
     }
+
+    /**
+     * Consistency
+     */
+
+
+
+
+
 }

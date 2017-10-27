@@ -5,9 +5,8 @@ import org.junit.Test;
 
 public class S08 {
 
-    /**
-     * final
-     */
+
+
 
 
     public class Point {
@@ -19,23 +18,7 @@ public class S08 {
             this.y = y;
         }
 
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (!(o instanceof Point)) return false;
-
-            Point point = (Point) o;
-
-            if (x != point.x) return false;
-            return y == point.y;
-        }
-
-        @Override
-        public int hashCode() {
-            int result = x;
-            result = 31 * result + y;
-            return result;
-        }
+        // GENERATE HERE
 
         @Override
         public String toString() {
@@ -43,10 +26,31 @@ public class S08 {
         }
     }
 
-
     @Test
     public void equalsverifier() {
         EqualsVerifier.forClass(Point.class)
                 .verify();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**
+     * Correct! And simple.
+     */
+
+
+
+
+
 }

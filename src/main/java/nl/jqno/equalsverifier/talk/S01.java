@@ -2,7 +2,12 @@ package nl.jqno.equalsverifier.talk;
 
 public class S01 {
 
+
+
+
+
     /**
+     *
      * - Reflexivity       Apple == Apple
      *
      * - Symmetry          if Apple == Orange, then Orange == Apple
@@ -13,5 +18,9 @@ public class S01 {
      *
      * - Non-nullity       Apple == null is never true
      */
+
+
+
+
 
 }

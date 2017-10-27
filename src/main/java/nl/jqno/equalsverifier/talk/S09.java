@@ -2,15 +2,19 @@ package nl.jqno.equalsverifier.talk;
 
 public class S09 {
 
+
+
+
+    
     /**
      * Conclusions
      *
-     * - Follow the contract
-     * - Make things final
-     * - Remember the LSP
-     * - Use canEqual if you must
      *
-     * Let EqualsVerifier guide you
+     * - Don't blindly trust a generated equals()
+     *
+     * - Make things final
+     *
+     * - Let EqualsVerifier guide you
      *
      */
 
@@ -30,20 +34,29 @@ public class S09 {
 
 
     /**
-     *            ________  ______  __    __
-     *           |        \|      \|  \  |  \
-     *           | ######## \######| ##\ | ##
-     *           | ##__      | ##  | ###\| ##
-     *           | ##  \     | ##  | ####\ ##
-     *           | #####     | ##  | ##\## ##
-     *           | ##       _| ##_ | ## \####
-     *           | ##      |   ## \| ##  \###
-     *            \##       \###### \##   \##
+     *                 ________  ______  __    __
+     *                |        \|      \|  \  |  \
+     *                | ######## \######| ##\ | ##
+     *                | ##__      | ##  | ###\| ##
+     *                | ##  \     | ##  | ####\ ##
+     *                | #####     | ##  | ##\## ##
+     *                | ##       _| ##_ | ## \####
+     *                | ##      |   ## \| ##  \###
+     *                 \##       \###### \##   \##
+     *
+     *
+     *                         Questions?
+     *
+     *
+     *                            @jqno
+     *          http://github.com/jqno/equalsverifier-talk
      *
      *
      *
-     *                       @jqno
-     *     http://github.com/jqno/equalsverifier-talk
+     *
+     *                         Read more:
+     *     http://www.artima.com/lejava/articles/equality.html
+     *
      */
 
 
