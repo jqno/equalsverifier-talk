@@ -4,6 +4,9 @@ import nl.jqno.equalsverifier.EqualsVerifier;
 import nl.jqno.equalsverifier.talk.helper.Color;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+
 public class S07 {
 
 
@@ -96,6 +99,47 @@ public class S07 {
         public String toString() {
             return "ColorPoint: " + x + "," + y + "," + color;
         }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @Test
+    public void solves_liskov_substitution_principle() {
+        Point p = new Point(1, 1);
+        Point sub = new Point(1, 1) {};
+
+        assertEquals(p, sub);
+    }
+
+    @Test
+    public void solves_symmetry() { // by not allowing added state
+        Point p = new Point(1, 1);
+        Point q = new ColorPoint(1, 1, Color.INDIGO);
+
+        assertNotEquals(p, q);
+        assertNotEquals(q, p);
+    }
+
+    @Test
+    public void solves_transitivity() { // by not allowing added state
+        Point a = new ColorPoint(1, 1, Color.INDIGO);
+        Point b = new Point(1, 1);
+        Point c = new ColorPoint(1, 1, Color.RED);
+
+        assertNotEquals(a, b);
+        assertNotEquals(b, c);
+        assertNotEquals(a, c);
     }
 
 

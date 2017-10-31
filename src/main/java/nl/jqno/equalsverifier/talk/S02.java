@@ -69,7 +69,7 @@ public class S02 {
 
 
     @Test
-    public void equalsverifier() {
+    public void get_a_better_error_message() {
         EqualsVerifier.forClass(Point.class)
                 .verify();
     }

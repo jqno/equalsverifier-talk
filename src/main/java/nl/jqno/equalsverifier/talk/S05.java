@@ -43,7 +43,7 @@ public class S05 {
 
 
     @Test
-    public void liskov_substitution_principle_solved() {
+    public void solves_liskov_substitution_principle() {
         Point p = new Point(1, 1);
         Point sub = new Point(1, 1) {};
 
