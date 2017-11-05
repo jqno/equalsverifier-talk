@@ -160,6 +160,19 @@ public class S06 {
                 .verify();
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * Transitivity
      */

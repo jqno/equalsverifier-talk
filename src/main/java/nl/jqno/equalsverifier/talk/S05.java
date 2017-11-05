@@ -120,6 +120,19 @@ public class S05 {
                 .verify();
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
     /**
      * Symmetry
      */

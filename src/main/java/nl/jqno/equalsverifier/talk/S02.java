@@ -28,6 +28,12 @@ public class S02 {
             }
             return x == obj.x && y == obj.y;
         }
+
+        public int hashCode() {
+            int result = x;
+            result = 31 * result + y;
+            return result;
+        }
     }
 
 
@@ -73,6 +79,19 @@ public class S02 {
         EqualsVerifier.forClass(Point.class)
                 .verify();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /**
      * Reflexivity

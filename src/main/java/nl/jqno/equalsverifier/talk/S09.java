@@ -51,12 +51,6 @@ public class S09 {
      *                            @jqno
      *          http://github.com/jqno/equalsverifier-talk
      *
-     *
-     *
-     *
-     *                         Read more:
-     *     http://www.artima.com/lejava/articles/equality.html
-     *
      */
 
 

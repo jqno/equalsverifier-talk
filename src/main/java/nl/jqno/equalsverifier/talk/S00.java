@@ -66,7 +66,7 @@ public class S00 {
      *
      * - pitfalls in equals()
      *
-     * - testing equals()
+     * - EqualsVerifier
      */
 
 
