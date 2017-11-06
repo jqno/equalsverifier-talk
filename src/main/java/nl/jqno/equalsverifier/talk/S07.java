@@ -115,14 +115,6 @@ public class S07 {
 
 
     @Test
-    public void solves_liskov_substitution_principle() {
-        Point p = new Point(1, 1);
-        Point sub = new Point(1, 1) {};
-
-        assertEquals(p, sub);
-    }
-
-    @Test
     public void solves_symmetry() { // by not allowing added state
         Point p = new Point(1, 1);
         Point q = new ColorPoint(1, 1, Color.INDIGO);
@@ -140,6 +132,14 @@ public class S07 {
         assertNotEquals(a, b);
         assertNotEquals(b, c);
         assertNotEquals(a, c);
+    }
+
+    @Test
+    public void solves_liskov_substitution_principle() {
+        Point p = new Point(1, 1);
+        Point sub = new Point(1, 1) {};
+
+        assertEquals(p, sub);
     }
 
 
