@@ -23,4 +23,21 @@ public class S01 {
 
 
 
+
+
+
+
+
+
+
+
+
+    /**
+     * How do you test this -- effectively?
+     */
+
+
+
+
+
 }
