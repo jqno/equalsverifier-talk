@@ -57,7 +57,8 @@ public class S02 {
 
         List<Point> pts = List.of(point);
 
-        assertTrue(pts.contains(clone));
+        assertTrue(point.equals(clone));
+//        assertTrue(pts.contains(clone));
     }
 
 
